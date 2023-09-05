@@ -1,0 +1,3 @@
+PIXELAC = {}
+
+PIXELAC.AntiInjection = true

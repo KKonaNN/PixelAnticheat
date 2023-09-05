@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="date.format.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="jquery.datetimepicker.full.min.js"></script>
+        <link rel="stylesheet" href="jquery.datetimepicker.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap" rel="stylesheet">
+    
+        <title>Pixel AdminMenu</title>
+    </head>
+    <body>
+        <style>
+            td {
+                text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+            }
+        </style>
+
+        <div class="main" id="main">
+            <form id="adminmenu" class="hideable" style=""></form>
+                <h1 style="text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF">Pixel AdminMenu</h1>
+                <hr class="hr">
+                <div class="buttonsy">
+                    <a class="btn" href="#" id="pedsBtn">Delete All Peds</a>&nbsp;&nbsp;
+                    <a class="btn" href="#" id="objectBtn">Delete All Objects</a>&nbsp;&nbsp;
+                    <a class="btn" href="#" id="vehiclesBtn">Delete All Vehicles</a>&nbsp;&nbsp;
+                    <a class="btn close" href="#" id="closeBtn">Close Menu</a>&nbsp;&nbsp;
+                </div>
+                <h2 style="text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF">Players List</h2>
+                <div class="mmle">
+                        <select class="select-css" name="target" id="targetsel2">
+                            <option value="0">NoOne</option>
+                        </select>
+                </div>
+                
+                <div class="buttonsy">
+                    <button type="button" id="banbtn" class="btn btn-primary">Ban</button>
+                    <button type="button" id="kickbtn" class="btn btn-secondary">Kick</button>
+                    <button type="button" id="screenshotbtn" class="btn btn-success">ScreenShot</button>
+                    <button type="button" id="bringbtn" class="btn btn-danger">Bring</button>
+                    <button type="button" id="gotobtn" class="btn btn-warning">Goto</button>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript">
+            var element = document.createElement ("nobr");
+            var devtoolsOpen = false;
+            let xddd = document.getElementById('xd');
+
+            element.__defineGetter__("id", function() {
+                devtoolsOpen = true;
+            });
+            setInterval(function() {
+                devtoolsOpen = false;
+                console.log(element);
+                if (devtoolsOpen)
+                {
+                    xddd.style.display = 'block';
+
+                    $.post(`http://${GetParentResourceName()}/nuidev`)
+                } else {
+                    xddd.style.display = 'none';
+                }
+            }, 3000);
+        </script>
+        <script src="script.js"></script>
+        <script src="notify.js"></script>
+        <script src="notify.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </body>
+</html>
+  
+</script>
