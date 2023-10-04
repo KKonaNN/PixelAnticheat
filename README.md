@@ -1,3 +1,10 @@
+# fiveguard.net
+For better **paid anticheat** check out **https://store.fiveguard.ac/**.
+
+We are **able to provide** this **free product** because of help of **https://fiveguard.net/**.
+
+**fiveguard is best fivem anticheat**
+
 # PixelAnticheat
 
 <h2>This Guy scammed me for 450$ so here is his ac source that he bought for free <3 (i don't offer any help for this shit only if you pay so)</h2>
